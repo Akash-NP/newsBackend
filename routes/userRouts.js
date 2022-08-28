@@ -94,7 +94,7 @@ router.post('/user-profile', upload.single('profileImg'), (req, res, next) => {
     })
 })
 router.get("/", (req, res, next) => {
-    User.find().then(data => {
+    User.find().sort({$natural:-1}).then(data => {
         // res.status(200).json({
         //     message: "User list retrieved successfully!",
         //     users: data
