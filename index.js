@@ -6,7 +6,7 @@ const api = require('./routes/userRouts')
 // MongoDB Configuration
 mongoose
  // .connect('mongodb://13.235.17.163:5002/applicants')
-  .connect('mongodb://localhost:27017/applicants')
+  .connect('mongodb://localhost:2700/applicants')
   .then((x) => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
